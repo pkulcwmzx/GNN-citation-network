@@ -33,7 +33,7 @@
             - `out2dist_sum` & `out2dist_mean`
             - `instVSdist_sum`: 
             An array of `[output_len]` (Output including additional texts `Answer: $golden`). Each element is 
-            $$\frac{\text{out2inst\_sum}}{\text{out2dist\sum}}$$
+            $$\frac{\text{out2inst\sum}}{\text{out2dist\sum}}$$
             - `instVSdist_mean`:
             An array of `[output_len]` (Output including additional texts `Answer: $golden`). Each element is $$\frac{\sum_{\text{instruction token } i} Attn(\text{cur output token}\rarr i) / \text{instruction token}}{\sum_{\text{distraction token } j} Attn(\text{cur output token}\rarr j) / \text{distraction token}}$$
             - `quesVSdist_sum`
