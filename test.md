@@ -28,7 +28,7 @@
             $$\sum_{\text{instruction token } i} Attn(\text{cur output token}\rarr i)$$
             - `out2inst_mean`:
             An array of `[output_len]` (Output including additional texts `Answer: $golden`). Each element is 
-            $$\frac{\sum_{\text{instruction token } i} Attn(\text{cur output token}\rarr i)}{\#\text{instruction token}}$$
+            $$\frac{\sum_{\text{instruction token } i} Attn(\text{cur output token}\rarr i)}{\text{instruction token}}$$
             - `out2ques_sum` & `out2ques_mean`
             - `out2dist_sum` & `out2dist_mean`
             - `instVSdist_sum`: 
